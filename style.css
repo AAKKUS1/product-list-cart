@@ -1,0 +1,108 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Text", serif;
+    margin: 20px;
+    height: 100vh;
+    background-color: #FCF8F6;
+}
+
+.item{
+    margin-bottom: 10px;
+}
+#name{
+    font-weight: 400;
+    line-height: 18.52px;
+    color: #87635A;
+}
+#desc{
+    font-weight: 600;
+    line-height: 21.17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#price{
+    font-weight: 600;
+    line-height: 21.17px;
+    color: #C73B0F;
+}
+header h1{
+    font-weight: 700;
+    line-height: 48px;
+    color: #260F08;
+    margin-bottom: 15px;
+}
+main img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+footer h1{
+    color: #C73B0F;
+    font-weight: 700;
+    font-size: 20px;
+}
+footer img{
+    width: 35%;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+footer p{
+    color: #87635A;
+    line-height: 18.52px;
+}
+@media screen and (min-width:321px){
+   body main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+   }
+   main img{
+    width: 95%;
+   }
+   footer h1{
+    font-size: 30px;
+   }
+}
+@media screen and (min-width:769px){
+    body main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 70%;
+    }
+    main img{
+        width: 90%;
+    }
+    main .item{
+        width: 75%;
+    }
+    body footer{
+        width: 20%;
+        height: fit-content;
+    }
+    .global{
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+    footer div{
+        padding: 10px;
+        border-radius: 12px;
+        background-color: white;
+    }
+}
